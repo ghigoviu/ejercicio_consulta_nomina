@@ -10,11 +10,11 @@ class Nomina:
         # Creación de documento
         recibo_nomina = Document()
         # Agregar datos de empleada o empleado
-        recibo_nomina.add_heading("Recibo de nomina del empleado" + empleado[0])
+        recibo_nomina.add_heading("Recibo de nomina del empleado " + empleado[0])
         recibo_nomina.add_paragraph("Puesto: " + empleado[1])
 
         # Agregar datos de los pagos de empleada o empleado
-        sueldo = empleado[2] * empleado[3]
+        sueldo = int(empleado[2]) * int(empleado[3])
         recibo_nomina.add_paragraph("Sueldo de esta semana: " + str(sueldo))
 
         print("Guardar documento")
