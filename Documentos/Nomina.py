@@ -19,3 +19,4 @@ class Nomina:
 
         print("Guardar documento")
         recibo_nomina.save(self.path + "/nomina.docx")
+        return recibo_nomina
